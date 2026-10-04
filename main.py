@@ -1,5 +1,11 @@
 from pathlib import Path
 from uuid import uuid4
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parent))
+
+# Giữ nguyên các dòng import bên dưới của bạn
+from app.services.cccd_extractor import extract_cccd_fields
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
