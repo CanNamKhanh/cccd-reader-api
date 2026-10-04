@@ -2,8 +2,7 @@ from pathlib import Path
 
 import cv2
 
-from app.services.ocr_service import read_text
-
+from services.ocr_service import read_text
 
 def extract_full_name(image_path: str) -> str | None:
     image = cv2.imread(image_path)

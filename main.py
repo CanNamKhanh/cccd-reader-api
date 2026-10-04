@@ -10,8 +10,6 @@ from services.cccd_extractor import extract_cccd_fields
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.services.cccd_extractor import extract_cccd_fields
-
 app = FastAPI(
     title="CCCD Reader API",
     description="Backend API for extracting information from Vietnamese CCCD images",
